@@ -1,6 +1,7 @@
 # SFTP Docker Server
 Project is created by Michal Maxian
-Date 10/2023
+
+Date: October 2023
 
 This project consists of a Dockerized SFTP server where users can be easily added and managed by modifying a text file.
 
