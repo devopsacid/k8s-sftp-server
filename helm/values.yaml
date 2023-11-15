@@ -1,0 +1,16 @@
+replicaCount: 1
+
+image:
+  repository: sftp-server
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+service:
+  type: ClusterIP
+  port: 22
+
+persistence:
+  enabled: true
+  storageName: sftp-data
+  storageSize: 1Gi
+  storageClassName: standard

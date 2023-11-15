@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  sftp:
+    image: sftp-server
+    ports:
+      - "22:22"
+    volumes:
+      - sftp_data:/home
+      - ./start.sh:/start.sh
+      - ./users.txt:/home/users.txt
+
+volumes:
+  sftp_data:
+    driver: local
+
